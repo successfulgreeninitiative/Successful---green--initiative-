@@ -56,6 +56,15 @@
       padding: 20px;
       border-radius: 8px;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
     footer {
       background: #1b5e20;
       color: white;
@@ -69,8 +78,8 @@
 <header>
   <h1>Successful Green Initiative</h1>
   <p>
-    We are a community-driven environmental organization committed to climate action,
-    sustainability, and protecting our planet for future generations.
+    A community-driven environmental organization committed to climate action,
+    sustainability, and protecting our planet.
   </p>
   <a href="#contact" class="btn">Get Involved</a>
 </header>
@@ -78,9 +87,8 @@
 <section>
   <h2>About Us</h2>
   <p>
-    Successful Green Initiative is dedicated to raising awareness about climate change,
-    promoting environmental education, and supporting green solutions within our communities.
-    We believe small actions can create big impact.
+    Successful Green Initiative promotes climate awareness, environmental education,
+    and sustainable practices across communities in Nigeria.
   </p>
 </section>
 
@@ -89,22 +97,29 @@
   <div class="cards">
     <div class="card">
       <h3>🌍 Climate Awareness</h3>
-      <p>
-        Educating communities on climate change, its effects, and practical solutions.
-      </p>
+      <p>Public education, school outreach, and climate advocacy.</p>
     </div>
     <div class="card">
       <h3>♻️ Waste Management</h3>
-      <p>
-        Promoting recycling, proper waste disposal, and reduction of pollution.
-      </p>
+      <p>Clean-up exercises, recycling awareness, and pollution reduction.</p>
     </div>
     <div class="card">
       <h3>🌱 Environmental Protection</h3>
-      <p>
-        Supporting tree planting, clean-up campaigns, and sustainable practices.
-      </p>
+      <p>Tree planting, conservation, and green community projects.</p>
     </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Activities</h2>
+  <p style="text-align:center;">
+    Some of our recent environmental actions and community engagements.
+  </p>
+
+  <div class="gallery">
+    <img src="cleanup.jpg" alt="Community clean-up activity">
+    <img src="tree-planting.jpg" alt="Tree planting exercise">
+    <img src="climate-talk.jpg" alt="Climate awareness program">
   </div>
 </section>
 
@@ -112,8 +127,8 @@
   <h2>Contact Us</h2>
   <p style="text-align:center;">
     📧 Email: successfulgreeninitiative@gmail.com <br>
-    📍 Location: Nigeria <br>
-    🤝 Volunteers & partners are welcome
+    📍 Nigeria <br>
+    🤝 Volunteers and partners are welcome
   </p>
 </section>
 
