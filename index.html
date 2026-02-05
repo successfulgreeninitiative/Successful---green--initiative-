@@ -167,6 +167,47 @@
   background: #006d3f;
 }
 
+    .contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #eef2f3;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form, .contact-map {
+  width: 45%;
+  min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #1b5e20;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #144d19;
+}
+
     }
   </style>
 </head>
@@ -353,14 +394,38 @@
   </div>
 </section>
 
-  <section id="contact">
-  <h2>Contact Us</h2>
-  <p style="text-align:center;">
-    📧 Email: successfulgreeninitiative@gmail.com <br>
-    📍 Nigeria <br>
-    🤝 Volunteers and partners are welcome
-  </p>
-  </section>
+ <section id="contact" class="contact-section">
+  <h2>Get in Touch</h2>
+  <p>Have questions or want to partner with us? Send us a message.</p>
+
+  <div class="contact-container">
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mdalnzaq" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- GOOGLE MAP -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps?q=Lagos,%20Nigeria&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
   
 <footer>
   <p>© 2026 Successful Green Initiative. All rights reserved.</p>
